@@ -1,0 +1,33 @@
+svg{
+    display: block;
+    margin:auto;
+    margin-top:20px;
+}
+.ns-dev{
+    max-width:310px;
+    margin: 50px auto 15px;
+    font-family: 'SeasideResortNF';
+}
+#Chris-Nelson{
+    animation: fadein 3s linear forwards;
+    fill:#A6A29C;
+   
+}
+.fe-dev{
+    fill:#A6A29C;
+    @include center;
+    margin: 25px auto 100px;
+    width:30%;
+    max-width:250px;
+    min-width:200px;
+    opacity: .0;
+    animation: fadein-full 1s 2s linear forwards;
+}
+
+    
+
+
+
+
+
+

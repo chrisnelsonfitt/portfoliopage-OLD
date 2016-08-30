@@ -1,0 +1,471 @@
+*:focus {
+  outline: none; }
+
+@font-face {
+  font-family: 'SeasideResortNF';
+  src: url("../font/SeasideResortNF.eot");
+  src: url("../font/SeasideResortNF.eot?#iefix") format("embedded-opentype"), url("../font/SeasideResortNF.woff") format("woff"), url("../font/SeasideResortNF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+html {
+  color: #A6A29C;
+  position: relative;
+  min-height: 100%;
+  font-family: 'Poiret One', cursive; }
+  @media (max-width: 415px) {
+    html {
+      background: url(../video/bokeh.jpg) #000 no-repeat center center fixed; } }
+
+a {
+  color: #D9D9D9;
+  text-decoration: none; }
+
+a:hover {
+  color: #A6A29C; }
+
+p {
+  display: block;
+  margin: auto;
+  font-size: .8rem;
+  text-align: center; }
+
+ul {
+  text-align: center;
+  margin-left: -50px; }
+
+h1 {
+  text-align: center;
+  width: 75%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto; }
+
+li {
+  list-style: none; }
+
+.header {
+  position: absolute;
+  z-index: 150;
+  top: -15px;
+  left: 50px;
+  width: 50%;
+  position: inherit;
+  margin: auto;
+  animation: fadein-full 500ms linear forwards;
+  -webkit-animation: fadein-full 500ms linear forwards;
+  -moz-animation: fadein-full 500ms linear forwards;
+  -ms-animation: fadein-full 500ms linear forwards; }
+  .header li {
+    margin-top: 25px;
+    background: none;
+    border: none; }
+  .header .close {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    border: none;
+    width: auto; }
+  .header .intro {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    font-size: 2rem; }
+  .header svg {
+    width: 40px;
+    float: right; }
+
+.go-back {
+  margin: 0px;
+  float: left;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  fill: #A6A29C;
+  z-index: 200; }
+
+.go-back:hover {
+  fill: #E1E6E7; }
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 25px;
+  width: 100%; }
+  footer div {
+    animation: fadein-full 1s 3s linear forwards;
+    -webkit-animation: fadein-full 1s 3s linear forwards;
+    -moz-animation: fadein-full 1s 3s linear forwards;
+    -ms-animation: fadein-full 1s 3s linear forwards;
+    opacity: 0.0; }
+
+.home {
+  margin-bottom: 10%;
+  margin-top: -75px; }
+  @media (min-width: 798px) {
+    .home {
+      margin-bottom: 5%;
+      margin-top: 25px; } }
+  .home li {
+    animation: fadein-full 1s 3s linear forwards;
+    -webkit-animation: fadein-full 1s 3s linear forwards;
+    -moz-animation: fadein-full 1s 3s linear forwards;
+    -ms-animation: fadein-full 1s 3s linear forwards;
+    color: #79756d;
+    display: block;
+    border: solid 3px #514E49;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1.533rem;
+    margin: -3px auto;
+    width: 120px;
+    background: rgba(25, 25, 25, 0.5);
+    opacity: .0; }
+    @media (min-width: 480px) {
+      .home li {
+        display: inline-block;
+        margin: -5px; } }
+  .home li:hover {
+    color: #A6A29C;
+    opacity: .0;
+    cursor: default;
+    animation: fadein-full 1s 3s linear forwards;
+    -webkit-animation: fadein-full 1s 3s linear forwards;
+    -moz-animation: fadein-full 1s 3s linear forwards;
+    -ms-animation: fadein-full 1s 3s linear forwards; }
+
+#selfie {
+  width: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+  opacity: .0;
+  animation: fadein-full 1s 2s linear forwards; }
+  @media (min-width: 798px) {
+    #selfie {
+      margin: 50px auto 0px; } }
+
+#github-link {
+  width: 120px;
+  display: block;
+  margin: auto; }
+  #github-link h2 {
+    margin: auto;
+    opacity: .0;
+    animation: fadein-full 1s 3s linear forwards;
+    -webkit-animation: fadein-full 1s 3s linear forwards;
+    -moz-animation: fadein-full 1s 3s linear forwards;
+    -ms-animation: fadein-full 1s 3s linear forwards;
+    text-align: center; }
+    @media (min-width: 340px) {
+      #github-link h2 {
+        margin-bottom: 0; } }
+  #github-link h2:after {
+    content: url(/img/github.svg); }
+
+#main-contact {
+  animation: fadein-full 500ms linear forwards;
+  -webkit-animation: fadein-full 500ms linear forwards;
+  -moz-animation: fadein-full 500ms linear forwards;
+  -ms-animation: fadein-full 500ms linear forwards;
+  display: flex;
+  flex-wrap: wrap;
+  clear: both; }
+  @media (min-width: 798px) {
+    #main-contact {
+      flex-wrap: nowrap;
+      margin-top: 50px; } }
+  #main-contact h1 {
+    width: 150px; }
+    @media (min-width: 798px) {
+      #main-contact h1 {
+        position: absolute;
+        left: 80px;
+        top: -215px; } }
+
+#contact-info {
+  position: relative;
+  width: 100%;
+  margin-top: 12%; }
+  #contact-info li {
+    background: none;
+    border: none;
+    display: block;
+    margin: auto;
+    display: inline-block;
+    margin-top: 50px; }
+  #contact-info p {
+    display: block;
+    margin: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 1.333rem;
+    width: 90%;
+    max-width: 400px; }
+    @media (min-width: 798px) {
+      #contact-info p {
+        margin: auto; } }
+
+#contact-container {
+  width: 100%;
+  margin-top: 50px; }
+  @media (min-width: 798px) {
+    #contact-container {
+      margin-top: 50px;
+      padding-left: 25px;
+      border-left: solid 4px #514E49; } }
+
+#contact-form {
+  border-radius: 5px; }
+  @media (min-width: 798px) {
+    #contact-form {
+      padding-left: 25px; } }
+  #contact-form fieldset {
+    border: none; }
+  #contact-form label {
+    display: block;
+    margin: auto;
+    font-size: 1.333rem; }
+  #contact-form input::-webkit-input-placeholder {
+    color: darkne(#514E49, 50%); }
+  #contact-form input::-moz-placeholder {
+    color: black; }
+  #contact-form input:-moz-placeholder {
+    color: black; }
+  #contact-form input:-ms-input-placeholder {
+    color: black; }
+  #contact-form input {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    border-bottom: solid grey 3px;
+    background: none;
+    color: white; }
+  #contact-form textarea {
+    color: #A6A29C;
+    display: block;
+    margin: auto;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    border-bottom: solid grey 3px;
+    background: rgba(150, 150, 150, 0.2); }
+  #contact-form .form-button {
+    display: inline;
+    border-bottom: none;
+    margin: 10px;
+    background: #514E49; }
+  #contact-form .form-button:hover {
+    background: #cfcdca;
+    color: #514E49; }
+  #contact-form #form-submit {
+    display: block;
+    margin: auto;
+    margin: 20px auto;
+    width: 40%; }
+
+span {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto 15px; }
+  span div {
+    margin: auto;
+    font-size: 1.333rem; }
+  span img {
+    width: 30px; }
+
+#form-messages {
+  display: block;
+  width: 75%;
+  min-width: 300px;
+  font-size: 1.233rem;
+  margin: auto;
+  background: #E1E6E7;
+  color: #333333;
+  border-radius: 4px;
+  text-align: center; }
+
+.gallery-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  clear: both;
+  animation: fadein-full 500ms linear forwards;
+  -webkit-animation: fadein-full 500ms linear forwards;
+  -moz-animation: fadein-full 500ms linear forwards;
+  -ms-animation: fadein-full 500ms linear forwards; }
+  .gallery-container .gallery-item {
+    width: 75%;
+    margin: 30px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .gallery-container .gallery-item {
+        width: 25%;
+        min-width: 300px; } }
+    .gallery-container .gallery-item img {
+      width: 100%;
+      border-radius: 2px; }
+  .gallery-container .gallery-item:hover {
+    animation: size 400ms forwards; }
+
+.portfolio-expand {
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  height: 100%;
+  animation: fadein-full 1s; }
+  .portfolio-expand div {
+    max-width: 500px;
+    display: block;
+    margin: auto; }
+  .portfolio-expand ul {
+    width: 75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .portfolio-expand li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 2px #A6A29C;
+    background: rgba(50, 50, 50, 0.8); }
+  .portfolio-expand h3 {
+    text-align: center;
+    clear: both;
+    padding-top: 45px;
+    width: 100%; }
+  .portfolio-expand h4 {
+    text-align: left; }
+  .portfolio-expand h2 {
+    width: 75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    width: 40%;
+    text-align: center; }
+  .portfolio-expand img {
+    width: 75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    margin-bottom: 5px;
+    border-radius: 3px; }
+  .portfolio-expand img:hover {
+    animation: size 1s forwards;
+    margin-bottom: 20px; }
+  .portfolio-expand p {
+    width: 75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    text-align: left; }
+  .portfolio-expand h4 {
+    width: 75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto; }
+  .portfolio-expand svg {
+    margin: 19px 0 0 4px; }
+
+.background-image {
+  display: none; }
+  @media (min-width: 414px) {
+    .background-image {
+      display: inherit;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background: url(video/skyline.jpg) no-repeat;
+      background-size: cover; } }
+
+.background-filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background: rgba(5, 5, 5, 0.9); }
+
+svg {
+  display: block;
+  margin: auto;
+  margin-top: 20px; }
+
+.ns-dev {
+  max-width: 310px;
+  margin: 50px auto 15px;
+  font-family: 'SeasideResortNF'; }
+
+#Chris-Nelson {
+  animation: fadein 3s linear forwards;
+  fill: #A6A29C; }
+
+.fe-dev {
+  fill: #A6A29C;
+  display: block;
+  margin: auto;
+  margin: 25px auto 100px;
+  width: 30%;
+  max-width: 250px;
+  min-width: 200px;
+  opacity: .0;
+  animation: fadein-full 1s 2s linear forwards; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: .7; } }
+@keyframes fadein-full {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadefill {
+  from {
+    fill-opacity: 0; }
+  to {
+    fill-opacity: .8; } }
+@keyframes size {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+@keyframes point {
+  0% {
+    cursor: default; }
+  100% {
+    cursor: pointer; } }
+
+/*# sourceMappingURL=style.css.map */

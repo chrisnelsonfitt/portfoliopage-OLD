@@ -1,0 +1,40 @@
+@mixin clearfix{
+    clear:both;
+    overflow: auto;
+}
+@mixin center{
+    display: block;
+    margin:auto;
+}
+@mixin sample-width {
+    width:75%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+@mixin fadein {
+ animation: fadein-full 500ms linear forwards;
+    -webkit-animation: fadein-full 500ms linear forwards;
+    -moz-animation: fadein-full 500ms linear forwards;
+    -ms-animation: fadein-full 500ms linear forwards;
+}
+@mixin fadein-delay{
+ animation: fadein-full 1s 3s linear forwards;
+    -webkit-animation: fadein-full 1s 3s linear forwards;
+    -moz-animation: fadein-full 1s 3s linear forwards;
+    -ms-animation: fadein-full 1s 3s linear forwards;
+}
+
+@mixin absolute{
+    position:absolute;
+}
+
+@mixin no-background{
+    background:none;
+}
+@mixin no-border{
+    border:none;
+}
+@mixin clear{
+    clear:both;
+}

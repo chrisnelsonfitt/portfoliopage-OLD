@@ -1,0 +1,93 @@
+.gallery-container{
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    @include clear;
+    @include fadein;
+    .gallery-item{
+        width:75%;
+        margin:30px;
+        text-align: center;
+        @media (min-width:768px){
+            width:25%;
+            min-width: 300px;
+        }
+        img{
+            width:$full-width;
+            border-radius: 2px;
+        }
+    }
+    .gallery-item:hover{
+             animation: size 400ms forwards;
+        }
+}
+.portfolio-expand{
+    font-family: 'Roboto Condensed', sans-serif;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    margin:auto;
+    height: 100%;
+    animation: fadein-full 1s;
+
+    div{
+        max-width:500px;
+        display: block;
+        margin: auto;
+    }
+    ul{
+        @include sample-width;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    li{
+        display: inline-block;
+        margin:5px  ;
+        padding:5px;
+        border-radius: 3px;
+        border: solid 2px $text;
+        background:rgba(50,50,50,.8);
+    }
+    h3 {
+        text-align: center;
+        clear:both;
+        padding-top:45px;
+        width: 100%;
+    }
+    h4{
+        text-align: left;
+    }
+    h2{
+        @include sample-width;
+        width:40%;
+        text-align: center;
+    }
+    img{
+         @include sample-width;
+       width:100%;
+        height: auto;
+        display: block;
+        margin: 25px auto;
+        margin-bottom:5px;
+        border-radius: 3px;
+    }
+    img:hover{
+        animation: size 1s forwards;
+        margin-bottom:20px;
+    }
+    p{
+        @include sample-width;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    h4{
+        @include sample-width;
+    }
+   svg{
+       margin:19px 0 0 4px;
+    }
+}
